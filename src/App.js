@@ -1,6 +1,9 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./App.css";
+import "animate.css"
+
 import { EmailButton, GithubButton, LinkedInButton } from "./Components/IconButton";
+import { ResumeViewer } from "./Components/ResumeViewer";
 import { TbBrandCSharp, TbSql} from "react-icons/tb";
 import { FaPython, FaJs, FaReact, FaHtml5, FaCss3, FaGit, FaGithub, FaGitlab} from "react-icons/fa"
 import { VscVscode } from "react-icons/vsc";
@@ -29,13 +32,19 @@ export default function App() {
             <h2 className="section-title">About Me</h2>
             <p className="section-text">
               I'm a passionate university student with a strong interest in the field of software engineering.
-              Hoping to further my understanding of tech and fulfill my long-term dream and ambition of becoming a software engineer.
+              Im attending East Coast Polytechnic University with the goal of completing my Bachelor of Science in Computer & Information Science.
+              My long-term goal is to pursue software engineering as a full-time career and to be on the forefront of the forever evolving world of technology.
             </p>
+
           </section>
 
+          <section className="section">
+            <h2 className="section-title">Resume</h2>
+            <ResumeViewer />
+          </section>
           {/* Projects Section */}
           <section className="section">
-            <h2 className="section-title">Projects</h2>
+            <h2 className="section-title">Notable Projects</h2>
             <ul className="project-list">
               <li className="project-item">
                 <h3 className="project-title">Task Manager App (CIS445)</h3>
