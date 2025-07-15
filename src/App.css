@@ -39,6 +39,11 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+.section-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
 
 .section-text {
   color: #4a5568;
@@ -66,8 +71,7 @@
   margin: 0.5rem 0;
 }
 
-.project-link,
-.contact-link {
+.project-link {
   color: #3182ce;
   text-decoration: underline;
 }
@@ -76,4 +80,10 @@
   list-style: disc;
   padding-left: 1.5rem;
   color: #4a5568;
+}
+
+.language-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
 }

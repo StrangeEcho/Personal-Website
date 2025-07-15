@@ -1,5 +1,10 @@
 import React from "react";
 import "./App.css";
+import { EmailButton, GithubButton, LinkedInButton } from "./Components/IconButton";
+import { TbBrandCSharp, TbSql} from "react-icons/tb";
+import { FaPython, FaJs, FaReact, FaHtml5, FaCss3, FaGit, FaGithub, FaGitlab} from "react-icons/fa"
+import { VscVscode } from "react-icons/vsc";
+import { SiWebstorm, SiPycharm, SiRider, SiSqlite} from "react-icons/si";
 
 export default function App() {
   return (
@@ -45,22 +50,47 @@ export default function App() {
             </ul>
           </section>
 
-          {/* Skills Section */}
+          {/* Skills & Technologies Section */}
           <section className="section">
-            <h2 className="section-title">Skills</h2>
-            <ul className="skills-list">
-              <li>Languages: Python (strongest), C#, JavaScript</li>
-              <li>Frameworks: React</li>
-              <li>Tools: VSCode, WebStorm, PyCharm, Rider, Gitlab, Github, Git, SQL, SQLite</li>
-            </ul>
+            <h2 className="section-title">Skills & Technologies</h2>
+            <h2 className="section-subtitle">Programming Languages</h2>
+            <p>
+              <FaPython className="language-icon"/>
+              <TbBrandCSharp className="language-icon"/>
+              <FaJs className="language-icon"/>
+            </p>
+
+            <h2 className="section-subtitle">Web Development</h2>
+            <p>
+              <FaReact className="language-icon"/>
+              <FaHtml5 className="language-icon"/>
+              <FaCss3 className="language-icon"/>
+            </p>
+
+            <h2 className="section-subtitle">Tools</h2>
+            <p>
+              <FaGit className="language-icon"/>
+              <VscVscode className="language-icon"/>
+              <SiWebstorm className="language-icon" />
+              <SiPycharm className="language-icon"/>
+              <SiRider className="language-icon"/>
+              <TbSql className="language-icon"/>
+              <SiSqlite className="language-icon"/>
+            </p>
+
+            <h2 className="section-subtitle">Miscellaneous</h2>
+            <p>
+              <FaGithub className="language-icon"/>
+              <FaGitlab className="language-icon"/>
+            </p>
           </section>
 
-          {/* Contact Section */}
+          {/* Contact & Links Section */}
           <section className="section">
-            <h2 className="section-title">Links & Contact</h2>
-            <p>Email: <a href="mailto:ruben.thomas0405@gmail.com" className="contact-link">ruben.thomas0405@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ruben-thomas-4b77b5289/" className="contact-link">Click Here</a></p>
-            <p>Github: <a href="https://github.com/StrangeEcho" className="contact-link">Click Here</a></p>
+            <h2 className="section-title">Contact & Links</h2>
+            <GithubButton />
+            <LinkedInButton />
+            <EmailButton />
           </section>
         </main>
       </div>
