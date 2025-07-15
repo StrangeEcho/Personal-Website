@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./App.css";
 import { EmailButton, GithubButton, LinkedInButton } from "./Components/IconButton";
 import { TbBrandCSharp, TbSql} from "react-icons/tb";
@@ -7,6 +7,11 @@ import { VscVscode } from "react-icons/vsc";
 import { SiWebstorm, SiPycharm, SiRider, SiSqlite} from "react-icons/si";
 
 export default function App() {
+  
+  useEffect(() => {
+    document.title = "Strange Echo Home Page";
+  }, [])
+  
   return (
       <div className="app-container">
         <header className="header">
