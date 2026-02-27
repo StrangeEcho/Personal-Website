@@ -1,10 +1,13 @@
 import React, {useEffect} from "react";
 import "./App.css";
 
+import { GithubButton, EmailButton, LinkedInButton } from "./Components/IconButton";
+import selfPhoto from "./assets/mept3.jpeg"
+
 export default function App() {
   
   useEffect(() => {
-    document.title = "Strange Echo Home Page";
+    document.title = "𝐻𝑜𝓂𝑒";
   }, [])
   
   return (
@@ -12,8 +15,9 @@ export default function App() {
         <header className="header">
           <div className="profile-header">
             <div>
+              <img className="selfPhoto" src={selfPhoto} alt="self-photo"/>
               <h1 className="name">Ruben Thomas</h1>
-              <p className="tagline">Aspiring Software Engineer | CIS Student | Tech Lover</p>
+              <p className="tagline">Aspiring Software Engineer • CIS Student • Tech Lover</p>
             </div>
           </div>
         </header>
@@ -52,7 +56,7 @@ export default function App() {
 
           {/* Skills Section */}
           <section className="section">
-            <h2 className="section-title">Skills</h2>
+            <h2 className="section-title">Skills & Technologies</h2>
             <ul className="skills-list">
               <li>Languages: Python (strongest), C#, JavaScript</li>
               <li>Frameworks: React</li>
@@ -62,10 +66,10 @@ export default function App() {
 
           {/* Contact Section */}
           <section className="section">
-            <h2 className="section-title">Links & Contact</h2>
-            <p>Email: <a href="mailto:ruben.thomas0405@gmail.com" className="contact-link">ruben.thomas0405@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ruben-thomas-4b77b5289/" className="contact-link">Click Here</a></p>
-            <p>Github: <a href="https://github.com/StrangeEcho" className="contact-link">Click Here</a></p>
+            <h2 className="section-title">Links & More</h2>
+            <EmailButton />
+            <GithubButton />
+            <LinkedInButton />
           </section>
         </main>
       </div>
