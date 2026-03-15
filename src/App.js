@@ -71,6 +71,10 @@ export default function App() {
             <GithubButton />
             <LinkedInButton />
           </section>
+
+          <section className="section">
+            <a href="https://docs.google.com/document/d/1h-ii2aNnmMN0FFI5lt00Gw3GiWmNrLwE/preview">Click Here For Resume</a>
+          </section>
         </main>
       </div>
   );
